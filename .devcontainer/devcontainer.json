@@ -1,0 +1,22 @@
+{
+    "name": "research_cuda117",
+    "dockerFile": "Dockerfile",
+    "remoteUser": "remote",    
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
+        }
+    },
+    "runArgs": ["--gpus", "all"]
+}
